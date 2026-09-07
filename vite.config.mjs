@@ -10,7 +10,7 @@ export default defineConfig({
     include: ["react", "react-dom/client"],
   },
   server: {
-    port: 5194,
+    port: 5195,
     strictPort: true,
     host: "0.0.0.0",
     allowedHosts: ["terminal.local"],

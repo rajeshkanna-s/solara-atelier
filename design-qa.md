@@ -28,3 +28,7 @@ State: home, collection, Eclipse Core details, reservation form and completion.
 Pass is for a functional responsive interpretation, not exact screenshot fidelity. Fine decorative icons and the original continuous photographic collection layout remain follow-up fidelity work. No booking service, commerce backend or data persistence.
 
 final result: passed
+
+## Expansion verification
+
+Production build passed. All four existing packaging/worker tests passed. Production CSS image paths resolve to existing files without root-relative URLs. Browser inspection confirmed a rendered WebGL model and no console errors. Material and exploded-view controls were exercised. Coffee studio and Solara collection were checked at 390px with no horizontal overflow; Solara new-expression filtering correctly shows three distinct watches. This verifies the local implementation; hosted GitHub Pages was not redeployed or rechecked.
