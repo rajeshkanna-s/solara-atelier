@@ -28,3 +28,11 @@ Includes three additional deep-linked pages, new locally stored generated photog
 New pages: Design Studio, Materials, Care Guide. New images: desert, movement, atelier, Solstice, Nocturne Chrono, Emerald Tide. Collection includes six watches and working variety filters.
 
 Relative asset paths and hash navigation support GitHub Pages project subpaths. Build with `npm run build`; publish the contents of `dist/client` when ready. These changes have not been deployed by this task.
+
+## Single-page scrolling update
+
+All nine sections stay mounted in one continuous page. Header navigation scrolls to section anchors, highlights the section currently in view, and closes the mobile menu after selection. Existing hash links still open the corresponding section. Reduced-motion preferences disable smooth scrolling.
+
+All six collection watches are selectable in the Design Studio. Each collection card has a link that selects its model and scrolls to the viewer. Models vary by dial, strap, size, case, and details (mesh GMT, bracelet chronograph, ivory dress dial, or emerald dive bezel). The hour, minute, and second hands follow the device-local clock; the GMT hand follows UTC. Pausing the decorative orbit does not stop the clock. Chronograph subdials are decorative design details, not a stopwatch.
+
+Clock checks: `node --test tests/watch-time.test.mjs`.

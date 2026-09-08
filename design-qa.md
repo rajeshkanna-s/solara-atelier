@@ -32,3 +32,9 @@ final result: passed
 ## Expansion verification
 
 Production build passed. All four existing packaging/worker tests passed. Production CSS image paths resolve to existing files without root-relative URLs. Browser inspection confirmed a rendered WebGL model and no console errors. Material and exploded-view controls were exercised. Coffee studio and Solara collection were checked at 390px with no horizontal overflow; Solara new-expression filtering correctly shows three distinct watches. This verifies the local implementation; hosted GitHub Pages was not redeployed or rechecked.
+
+## Single-page / live-time verification — 2026-09-08
+
+Both production builds and all eight existing worker/packaging checks passed. Both pages expose nine mounted scroll sections. Mobile coffee navigation to Drinks closes the menu, highlights Drinks, and positions the section 95px below the viewport top. No horizontal overflow at 390px. Browser console checks returned no errors on the updated previews.
+
+All six model choices were exercised in the browser, each mounting its named 3D viewer. Emerald Tide was visually inspected on desktop and mobile. While the viewer remained paused, the visible local clock advanced from 10:28:30 to 10:29:34. Four automated clock/configuration tests passed, covering midnight/noon, fractional hour/minute/second positions, minute rollover, and the six model configurations. The source applies these clock angles on every rendered frame independently of decorative pause state. Collection-to-studio selection was verified with Solstice.
