@@ -36,3 +36,9 @@ All nine sections stay mounted in one continuous page. Header navigation scrolls
 All six collection watches are selectable in the Design Studio. Each collection card has a link that selects its model and scrolls to the viewer. Models vary by dial, strap, size, case, and details (mesh GMT, bracelet chronograph, ivory dress dial, or emerald dive bezel). The hour, minute, and second hands follow the device-local clock; the GMT hand follows UTC. Pausing the decorative orbit does not stop the clock. Chronograph subdials are decorative design details, not a stopwatch.
 
 Clock checks: `node --test tests/watch-time.test.mjs`.
+
+## Animation libraries
+
+Motion Primitives provides adapted line-by-line heading and staggered specification reveals. Animate UI provides spring hover/press buttons. Cult UI's Shift Card pattern provides watch-card lift and image movement, with animated filter highlighting and collection enter/exit/layout transitions powered by their shared `motion` dependency.
+
+Local adaptations live in `src/animation.jsx` and `src/animation.css`; upstream links and license notices ship in `public/licenses`. The previous document-level animation hook has been replaced by viewport-aware React components. Reduced-motion preferences disable decorative transforms, while keyboard and touch retain every product action. Existing watch-clock and WebGL behavior is preserved.

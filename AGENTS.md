@@ -11,3 +11,5 @@ Build app UI in `src/`. Keep `.openai/hosting.json`, `worker/index.js`, `scripts
 User requested expanded image variety, additional pages, and proper 3D animation on 2026-09-07. Preserve both brands, real WebGL product viewers, hash deep links, reduced-motion support, and GitHub Pages subpath-compatible assets.
 
 User requested one continuous scroll page with sticky scroll-aware header navigation. All watch variants must be available in 3D with hour, minute and second hands synchronized to current device-local time; pausing decorative motion must not freeze time.
+
+User requested Motion Primitives, Animate UI, and Cult UI animations on 2026-09-08. Preserve the subtle editorial motion direction and the source/license attribution in public/licenses; all effects must respect reduced-motion preferences, with product actions accessible on touch and keyboard.

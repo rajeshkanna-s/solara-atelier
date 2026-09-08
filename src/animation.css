@@ -1,0 +1,19 @@
+.sr-only{position:absolute;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.motion-text-line{display:block}
+.watch-grid{position:relative;align-items:start}
+.shift-card{position:relative;min-width:0;border:1px solid transparent;border-radius:6px;transition:border-color .35s,box-shadow .35s}
+.shift-card:hover,.shift-card:focus-within{border-color:#c9a47a40;box-shadow:0 18px 45px #0003}
+.shift-card .watch-visual{overflow:hidden;transform:none;transition:none}
+.shift-card .watch-image{transition:transform .65s cubic-bezier(.22,1,.36,1)}
+@media(hover:hover) and (pointer:fine){.shift-card:hover .watch-image{transform:translateY(-6px) scale(1.035)}}
+.shift-card:focus-within .watch-image{transform:translateY(-6px) scale(1.035)}
+.collection-filters button{position:relative;isolation:isolate}
+.filter-highlight{position:absolute;inset:0;z-index:-1;background:#9b713133;border:1px solid #c9a47a;pointer-events:none}
+.collection-filters button[aria-pressed=true]{background:transparent;border-color:transparent}
+.hero-specs>div{flex:1}.hero-specs>div>span{display:block}
+.hero-specs>div+div{border-left:1px solid var(--line);padding-left:24px}
+button:focus-visible,a:focus-visible,summary:focus-visible{outline:2px solid #dfbe88;outline-offset:5px}
+dialog[open]{animation:dialog-arrive .3s cubic-bezier(.22,1,.36,1)}
+@keyframes dialog-arrive{from{opacity:0;transform:translateY(12px) scale(.98)}to{opacity:1;transform:none}}
+@media(max-width:700px){.hero-specs>div+div{padding-left:12px}}
+@media(prefers-reduced-motion:reduce){.motion-text-line{opacity:1!important;filter:none!important;transform:none!important}.shift-card,.shift-card .watch-image{transition:none!important;transform:none!important}dialog[open]{animation:none}.filter-highlight{transform:none!important}}

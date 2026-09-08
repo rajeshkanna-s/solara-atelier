@@ -1,10 +1,12 @@
 import React from "react";
+import {MotionConfig} from "motion/react";
 import { createRoot } from "react-dom/client";
 import { App } from "./App.jsx";
 import "./styles.css";
+import "./animation.css";
 
 createRoot(document.getElementById("root")).render(
   <React.StrictMode>
-    <App />
+    <MotionConfig reducedMotion="user"><App /></MotionConfig>
   </React.StrictMode>,
 );
